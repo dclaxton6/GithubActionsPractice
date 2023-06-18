@@ -5,6 +5,8 @@ jobs:
   run-build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: ls
+      
       - run:
           npm run build
 
