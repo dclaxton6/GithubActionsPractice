@@ -2,7 +2,7 @@ name: Deployment
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Run Build and Deploy:
+  run-build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - run:
