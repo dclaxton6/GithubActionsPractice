@@ -9,4 +9,4 @@ jobs:
           npm run build
 
       - run:
-        npm run deploy
+          npm run deploy
