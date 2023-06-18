@@ -5,10 +5,12 @@ jobs:
   run-build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: ls -a
-
-      - run:
-          npm run build
-
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - run: npm ci
+      - run: npm run build --if-present
       - run:
           npm run deploy
