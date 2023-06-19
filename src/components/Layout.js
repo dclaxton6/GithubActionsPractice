@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
 
 
 
@@ -48,9 +47,9 @@ export class Layout extends Component {
 </nav>
         </header>
       
-        <Container>
+        <div className='container'>
           {this.props.children}
-        </Container>
+        </div>
       </div>
     );
   }
