@@ -1,7 +1,10 @@
 name: Deployment
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+env:
+  CI: false
 jobs:
+  
   run-build-and-deploy:
     runs-on: ubuntu-latest
     steps:
